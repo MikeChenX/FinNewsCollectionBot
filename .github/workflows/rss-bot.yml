@@ -1,0 +1,35 @@
+name: 📡 RSS 财经新闻自动推送
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 北京时间 9:00 (UTC 1:00)
+    - cron: '0 10 * * *'  # 北京时间 17:00 (UTC 9:00)
+
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 克隆仓库
+        uses: actions/checkout@v3
+
+      - name: 🛠️ 设置 Python 环境
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: 📦 安装依赖
+        run: |
+          cd $GITHUB_WORKSPACE
+          pip install -U pip setuptools wheel
+          pip install lxml[html_clean] 
+          pip install -r requirements.txt
+
+      - name: 🔑 设置环境变量
+        run: |
+          echo "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}" >> $GITHUB_ENV
+          echo "SERVER_CHAN_KEYS=${{ secrets.SERVER_CHAN_KEYS }}" >> $GITHUB_ENV
+
+      - name: 🚀 运行脚本
+        run: python financebot.py
