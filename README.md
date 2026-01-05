@@ -2,20 +2,16 @@
 
 **为专业投资者打造的智能财经资讯助手**
 
-[![📡 RSS 财经新闻自动推送](https://github.com/sgrsun3/FinNewsCollectionBot/actions/workflows/rss-bot.yml/badge.svg)](https://github.com/sgrsun3/FinNewsCollectionBot/actions/workflows/rss-bot.yml)
-![GitHub Stars](https://img.shields.io/github/stars/sgrsun3/FinNewsCollectionBot?style=social)
-![License](https://img.shields.io/github/license/sgrsun3/FinNewsCollectionBot)
+[![📡 RSS 财经新闻自动推送](https://github.com/jxh1997/FinNewsCollectionBot/actions/workflows/rss-bot.yml/badge.svg)](https://github.com/sgrsun3/FinNewsCollectionBot/actions/workflows/rss-bot.yml)
+![GitHub Stars](https://img.shields.io/github/stars/jxh1997/FinNewsCollectionBot?style=social)
+![License](https://img.shields.io/github/license/jxh1997/FinNewsCollectionBot)
 
 ---
 ## 🧧 支持作者 · 让项目持续进化！
 
 如果本项目对你有帮助，欢迎打赏支持，资助我多喝几杯咖啡 ☕，跑更多模型 💻～
 
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/0f8c1057-3ab2-4e87-8c32-5a7726214a5d" width="280" />
-</div>
-
-- 💬 微信号：`ArkhamKni9ht`
+- 💬 微信号：`Jingxh0708`
 - 🙌 感谢每一位 Star、Fork 和支持者！
 
 > ✨ 金融爸爸一块钱我不嫌少，一百块我也不嫌多 😊
@@ -107,4 +103,8 @@ graph TD
 
 ---
 
-© 2024 sgrsun3 | MIT License
+此项目Fork于sgrsun3，感谢原作者
+
+---
+
+© 2025 jxh1997 | MIT License
