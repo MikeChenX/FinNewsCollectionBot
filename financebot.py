@@ -158,7 +158,7 @@ if __name__ == "__main__":
     today_str = today_date().strftime("%Y-%m-%d")
 
     # 每个网站获取最多 5 篇文章
-    articles_data, analysis_text = fetch_rss_articles(rss_feeds, max_articles=5)
+    articles_data, analysis_text = fetch_rss_articles(rss_feeds, max_articles=15)
     
     # AI生成摘要
     summary = summarize(analysis_text)
